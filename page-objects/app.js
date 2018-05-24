@@ -8,8 +8,10 @@ module.exports = {
     elements: {},
     commands: [{
         metaSayHello() {
+            // this.client is an instance of NightwatchClient, and there is no sayHello custom command defined
             this.client.sayHello();
-            return thisl
+                        
+            return this;
         }
     }]
 }
